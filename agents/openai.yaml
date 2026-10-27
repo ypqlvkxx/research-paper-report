@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文精读报告"
+  short_description: "支持 PDF、论文网页和 Zotero 引文，为单篇或多篇论文分别生成有图表和独立评判的中文报告"
+  default_prompt: "请使用 $paper-reading-report 精读我提供的论文，每篇生成独立的精简中文 PDF 报告，保留关键可视化与独立评判；某篇全文获取受阻就说明情况并继续其他论文，完成后清理下载和中间文件。"

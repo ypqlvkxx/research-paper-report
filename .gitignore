@@ -1,0 +1,15 @@
+# Generated reports and temporary materials
+*.pdf
+work/
+outputs/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Operating-system and Python caches
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
