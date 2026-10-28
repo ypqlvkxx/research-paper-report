@@ -30,7 +30,9 @@ Identify the papers, backbones, pretrained models, datasets, and postprocessing 
 
 **5. Core innovations and method modules**
 
-Condense the method into two to four modules, explaining the obstacle each addresses and how they connect. Include an original method diagram or one or two key equations when useful. Explain symbols without listing every layer and loss. State the method's assumptions and scope.
+**Include at least one method workflow diagram**, adjacent to the method explanation and preferably on the same page. Follow section 3 of `SKILL.en.md` when choosing an original figure or preparing an attributed diagram from the text. Show inputs, core modules, required priors, and outputs clearly.
+
+Condense the method into two to four modules and explain their roles and connections in diagram order. Keep names and abbreviations consistent, adding translated labels or a numbered mapping when helpful. Distinguish training-only information from inference paths. Optionally add one or two key equations and explain their symbols; equations do not replace the diagram. Avoid listing every layer and loss. State the method's assumptions and scope.
 
 **6. Experimental setup**
 
@@ -40,7 +42,7 @@ Cover datasets, regions or scenes, input resolution, sample counts and splits, s
 
 Use a compact table or figure for representative main results and necessary ablations, including important strong baselines, units, and whether higher or lower is better. Avoid reproducing every table.
 
-When qualitative results are available, select one or two informative original figures, ideally retaining side-by-side ground truth, relevant baselines, and the proposed method. Explain specific improvements and defects. Do not omit representative failures, negative results, or supplementary counterexamples merely because they weaken the narrative. If visual comparisons are absent, state that rather than fabricating them.
+When qualitative results are available, select one or two informative original figures, ideally retaining side-by-side ground truth, relevant baselines, and the proposed method. The method workflow diagram does not count toward these result figures. Explain specific improvements and defects. Do not omit representative failures, negative results, or supplementary counterexamples merely because they weaken the narrative. If visual comparisons are absent, state that rather than fabricating them.
 
 **8. Support for the modules and broader applicability**
 
@@ -65,9 +67,9 @@ List the main paper, supplements, and project or code sources actually used. Pre
 ## Suggested pagination
 
 1. Research classification, task background, both summaries, and the prior-method timeline with limitations assessed.
-2. Direct foundations, innovations, method diagram, and key mechanisms.
+2. Direct foundations, the required method workflow diagram, and innovations and mechanisms matched to its modules.
 3. Experimental setup, compact main results, and necessary ablations.
 4. One or two qualitative comparison figures and observations.
 5. Evidence boundaries, quality assessment, future directions, sources of novelty, and references.
 
-These page breaks are optional. Use four pages when the paper is short or lacks suitable figures; expand for complex papers or requests for more detail. Save space through selection and deduplication rather than shrinking fonts or cropping legends.
+These page breaks are optional. Use four pages when the paper is short or lacks qualitative result figures, while retaining the method workflow diagram; expand for complex papers or requests for more detail. Reserve space for method and result figures early. Save space through selection and deduplication rather than shrinking fonts or cropping legends.

@@ -46,7 +46,14 @@ When necessary, read relevant author project pages or repository configurations 
 
 Read [report-outline.en.md](references/report-outline.en.md) when writing. Organize the report around “What is the task? → What came before? → What changes here? → What do the experiments establish? → What is worth adopting?” Merge overlapping material rather than mechanically expanding every point.
 
-If the paper includes qualitative results, select **one or two key comparison figures**, ideally showing ground truth, relevant baselines, and the proposed method. Explain visible advantages and remaining defects. Also retain a compact table of main metrics and necessary ablations. Add method diagrams or equations only when they help explain the work.
+**Every report must contain at least one method workflow diagram embedded in the final PDF.** Place it beside the method explanation, preferably on the same page, so readers can follow “inputs → core modules → outputs” alongside the prose. Equations, textual arrows, image links, and result comparisons do not replace this diagram. Apply the requirement to every paper in a batch.
+
+- Prefer the paper's overall architecture or workflow figure. Preserve necessary labels, arrows, legends, and the original figure number and page. A diagram of a single module is sufficient only if it explains the complete main workflow.
+- If an overview is absent, unreadable, or too complex, draw a simplified workflow from the verified methods text. Label it “Diagram prepared from §X / Fig. X of the paper” and distinguish it from an original author figure. Include only supported modules and connections; do not invent processing steps or experimental results.
+- Use the same module names or abbreviations in the diagram and prose, explaining two to four core modules in the same order. Add translated labels or a numbered mapping when helpful. Identify input data, required priors, key data flows, and outputs. Clearly distinguish training-only supervision or losses from inference paths when shown.
+- Reserve space for the diagram before drafting. Keep labels readable and the data flow intact. Stay near the default length by cutting repetitive prose; complex diagrams may use an overview plus a detail panel. Do not save pages by omitting the diagram or shrinking it beyond readability.
+
+If the paper includes qualitative results, also select **one or two key comparison figures**, ideally showing ground truth, relevant baselines, and the proposed method. Explain visible advantages and remaining defects. The method workflow diagram does not count toward these comparison figures. Retain a compact table of main metrics and necessary ablations; include key equations only when they help explain the work.
 
 - Use figures directly from the paper, or redraw them from the original data with attribution. Never fabricate experimental results.
 - Representative rows or scenes may be cropped, but keep compared views, regions, and scales matched. Preserve method names, color meanings, ground-truth labels, and original figure numbers. If ground truth is absent, say so rather than inventing it.
@@ -60,6 +67,8 @@ Use the currently available PDF skill and its requirements without hardcoding a 
 Save final files in the user's requested location or the workspace deliverables directory. Keep temporary materials in a task-specific subdirectory under `work/`. Use the paper's short name and year for filenames and avoid overwriting other reports. Use fonts that support the Chinese characters in the report and prefer typesetting markup for superscripts and subscripts to avoid missing-glyph boxes.
 
 Render and visually inspect every report page for heading hierarchy, table wrapping, image clarity, complete legends, page numbers, whitespace, clipping, and overlap. Verify key values and sources, then inspect affected pages again after corrections. Confirm readability and page count with a PDF parser. State when experiments were not reproduced.
+
+For each report, verify that the method workflow diagram is embedded; its inputs, arrows, modules, and outputs are readable; and its names, ordering, and training/inference boundaries agree with the nearby prose. Check attribution for original and prepared diagrams. A report without a method workflow diagram is incomplete: add it before delivery. If the methods text provides insufficient evidence for a reliable diagram, state the specific gap for that paper instead of inventing a workflow.
 
 ## 5. Clean up and deliver
 

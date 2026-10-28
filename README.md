@@ -27,6 +27,7 @@ This skill follows those questions from the task background to the final evidenc
 
 - 🧭 **Start with the task.** Understand the inputs, outputs, assumptions, and research field before diving into the method.
 - 🧬 **Trace the ideas.** See the prior-work timeline and distinguish inherited components from new contributions.
+- 🗺️ **Follow the method.** Every report includes a workflow diagram matched to the module explanations. Prefer the paper's overview; prepare an attributed diagram from the methods text when needed.
 - 🖼️ **See the difference.** Include one or two key qualitative comparisons when available, alongside the main metrics and useful ablations.
 - 🔎 **Question the claims.** Check strong baselines, fair comparisons, failure cases, and what the evidence actually establishes.
 - 📚 **Bring a batch.** Mix PDFs and links; get a separate report for each paper. An inaccessible item does not stop the others.
@@ -111,10 +112,10 @@ The report moves from **“What is the task?”** to **“What is worth taking a
 <summary><strong>🔬 Understand the method and inspect the results</strong></summary>
 
 - Core innovations and a concise explanation of the method modules.
-- A method diagram or a few equations when they make the idea clearer.
+- At least one method workflow diagram beside the method explanation, with matching module names, clear inputs and outputs, and source attribution. Key equations are optional additions.
 - Datasets, splits, baselines, training settings, available parameter counts, and resource costs.
 - Selected main results and necessary ablations.
-- One or two qualitative comparison figures when provided, with concrete observations about improvements and remaining defects.
+- One or two qualitative comparison figures when provided, in addition to the method diagram, with concrete observations about improvements and remaining defects.
 
 </details>
 
